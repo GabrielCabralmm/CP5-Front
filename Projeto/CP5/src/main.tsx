@@ -7,10 +7,12 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import App from './App';
 import Login from './Routers/Login';
 import Error from './Routers/Error';
+import Cadastro from './Routers/Cadastro';
 
 const router = createBrowserRouter([
   {path:"/", element:<App/>, errorElement:<Error/> , children:[
-    {path:"/",element:<Login/>}
+    {path:"/",element:<Login/>},
+    {path:"/",element:<Cadastro/>},
   ]}
 ]);
 
