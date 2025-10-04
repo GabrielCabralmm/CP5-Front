@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root{
+    scroll-behavior: smooth;
+}
+
+@layer {
+    .container {
+        @apply flex flex-col mx-auto;
+
+        & main {
+            @apply flex flex-col;
+
+            & h1 {
+                @apply text-center text-5xl font-light mt-20;
+            }
+
+            & form {
+                @apply flex flex-col text-white bg-gray-800 text-lg mx-auto p-5 rounded-2xl my-15 shadow-2xl;
+
+                & h2 {
+                    @apply text-2xl text-center mb-5;
+                }
+
+                & .formulario {
+                    @apply bg-gray-700 rounded-2xl border-1 border-blue-600 p-5 mx-3 mb-5;
+
+                    & .campos {
+                        @apply px-5 mt-3;
+
+                        & div {
+                            @apply flex flex-col mb-8;
+
+                            & label {
+                                @apply mb-1;
+                            }
+
+                            & input {
+                                @apply border-b-1 border-b-gray-500 px-2 w-90 pb-1;
+                            }
+                        }
+                    }
+
+                    & p {
+                        @apply text-blue-300 underline ms-6 mb-4;
+                    }
+                    
+                    & .botao {
+                        @apply bg-blue-600 mx-auto text-center w-30 rounded-2xl px-2 py-1;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
