@@ -12,7 +12,7 @@ import Cadastro from './Routers/Cadastro';
 const router = createBrowserRouter([
   {path:"/", element:<App/>, errorElement:<Error/> , children:[
     {path:"/",element:<Login/>},
-    {path:"/",element:<Cadastro/>},
+    {path:"/cadastro",element:<Cadastro/>},
   ]}
 ]);
 
