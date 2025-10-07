@@ -7,23 +7,23 @@ export default function Cabecalho() {
   const usuario: Usuario = salvo ? JSON.parse(salvo) : null;
 
   return (
-    <header className="w-full border-b mb-6">
-      <div className="container py-4 flex items-center justify-between">
+    <header className="border-b mb-6">
+      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <h1 className="text-2xl font-semibold">Meu App</h1>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 sm:gap-6">
           <Menu />
 
-          <div className="text-sm">
+          <div className="text-xs sm:text-sm leading-snug">
             {usuario ? (
               <>
                 <div className="font-medium">
-                  {usuario.nome} <span className="opacity-60">(@{usuario.nomeUsuario})</span>
+                  {usuario.nome} <span className="text-neutral-500">(@{usuario.nomeUsuario})</span>
                 </div>
-                <div className="opacity-70">{usuario.email}</div>
+                <div className="text-neutral-600">{usuario.email}</div>
               </>
             ) : (
-              <div className="opacity-70">Não autenticado</div>
+              <div className="text-neutral-600">Não autenticado</div>
             )}
           </div>
         </div>
