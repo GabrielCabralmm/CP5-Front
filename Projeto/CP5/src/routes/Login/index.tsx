@@ -10,24 +10,24 @@ export default function Login(){
   async function onSubmit({ nomeUsuario, email }: Form){
     const q = new URLSearchParams({
       nomeUsuario: nomeUsuario.trim(),
-      email: email.trim(),
+      email: email.trim()
     });
 
     const res = await fetch(`http://localhost:3001/usuarios?${q.toString()}`);
-    if (!res.ok) {
+    if(!res.ok){
       alert("Falha ao buscar usuário.");
       return;
     }
 
     const data = await res.json();
-    const user = data[0];
+    const usuario = data[0];
 
-    if (!user) {
+    if(!usuario){
       alert("Usuário não encontrado.");
       return;
     }
 
-    localStorage.setItem("auth_usuario", JSON.stringify(user));
+    localStorage.setItem("auth_usuario", JSON.stringify(usuario));
     navigate("/");
   }
 
@@ -36,7 +36,6 @@ export default function Login(){
       <h1>Bem-Vindo!</h1>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <h2>LOGIN</h2>
-
         <div className="formulario">
           <div className="campos">
             <div>

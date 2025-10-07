@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./global.css";
 
-import {createBrowserRouter,RouterProvider,Navigate} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
 
 import App from "./App";
 import Login from "./routes/Login";
@@ -15,16 +15,15 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
-
       { index: true, element: <Navigate to="/login" replace /> }, 
       { path: "login", element: <Login /> },
-      { path: "cadastro", element: <Cadastro /> },
+      { path: "cadastro", element: <Cadastro /> }
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </StrictMode>
 );

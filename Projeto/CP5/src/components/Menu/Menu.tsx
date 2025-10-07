@@ -1,33 +1,10 @@
-import Menu from "../Menu/Menu";
+import { Link } from "react-router-dom";
 
-type Usuario = { nome: string; nomeUsuario: string; email: string } | null;
-
-export default function Cabecalho() {
-  const salvo = localStorage.getItem("auth_usuario");
-  const usuario: Usuario = salvo ? JSON.parse(salvo) : null;
-
+export default function Menu() {
   return (
-    <header className="w-full border-b mb-6">
-      <div className="container py-4 flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Meu App</h1>
-
-        <div className="flex items-center gap-6">
-          <Menu />
-
-          <div className="text-sm">
-            {usuario ? (
-              <>
-                <div className="font-medium">
-                  {usuario.nome} <span className="opacity-60">(@{usuario.nomeUsuario})</span>
-                </div>
-                <div className="opacity-70">{usuario.email}</div>
-              </>
-            ) : (
-              <div className="opacity-70">Não autenticado</div>
-            )}
-          </div>
-        </div>
-      </div>
-    </header>
+    <nav className="flex gap-4 text-sm">
+      <Link to="/login">Login</Link>
+      <Link to="/cadastro">Cadastro</Link>
+    </nav>
   );
 }

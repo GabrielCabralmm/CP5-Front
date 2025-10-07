@@ -13,7 +13,6 @@ export default function Cabecalho() {
 
         <div className="flex items-center gap-4 sm:gap-6">
           <Menu />
-
           <div className="text-xs sm:text-sm leading-snug">
             {usuario ? (
               <>
