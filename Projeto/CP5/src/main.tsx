@@ -5,9 +5,9 @@ import "./global.css";
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 import App from './App';
-import Login from './Routers/Login';
-import Error from './Routers/Error';
-import Cadastro from './Routers/Cadastro';
+import Login from './routes/Login';
+import Error from './routes/Error';
+import Cadastro from './routes/Cadastro';
 
 const router = createBrowserRouter([
   {path:"/", element:<App/>, errorElement:<Error/> , children:[
