@@ -76,15 +76,14 @@ POST http://localhost:3001/usuarios (para cadastro)
 
 Após login bem-sucedido:
 
-O usuário é salvo no localStorage como usuarioLogado
+ - O usuário é salvo no localStorage como usuarioLogado
 
-O cabeçalho mostra:
+ - O cabeçalho mostra:
 
 “Logado como: Nome” em todas as páginas.
 
 🧱 Estrutura de Pastas (Resumo)
-bash
-Copiar código
+```bash
 src/
   App.tsx
   main.tsx
@@ -97,13 +96,12 @@ src/
     Cadastro/index.tsx
     Error/index.tsx
 db.json
+```
 Exemplo do arquivo api.ts:
-
-ts
-Copiar código
+```bash
 export const API = "http://localhost:3001";
-
-👥 Integrantes
+```
+👥 **Integrantes**
 
 Enzo Monteiro Maciel — RM 563734
 
