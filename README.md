@@ -46,6 +46,25 @@ Saída esperada:
 ```bash
 Vite running on http://localhost:5173
 ```
+**4. React Router**
+ ```bash
+npm i react-router-dom    
+ ```
+**5. React Hook Form**
+ ```bash
+ npm i react-hook-form
+ ```
+**6. Vite + React 19 + TypeScript**
+ ```bash
+ npm i react@latest react-dom@latest
+ npm i -D typescript@latest vite@latest @vitejs/plugin-react@latest
+```
+
+**7. JSON Server (API fake)**
+```bash
+npm i -D json-server
+```
+
 A rota inicial é /login.
 
 🗃️ Estrutura da API (json-server)
