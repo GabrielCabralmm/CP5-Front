@@ -105,6 +105,6 @@ export const API = "http://localhost:3001";
 
 Enzo Monteiro Maciel — RM 563734
 
-Nome do integrante 2 — RM 563230
+Gabriel Cabral Mendes — RM 563230
 
-Nome do integrante 3 — RM 563557
+Matheus de Almeida Sousa — RM 563557
