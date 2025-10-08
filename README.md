@@ -25,8 +25,9 @@ App simples com **Login** e **Cadastro** utilizando **React Hook Form**, **Tailw
 ## ▶️ Como Rodar o Projeto
 
 1. **Instalar dependências:**
-   ```bash
-   npm i
+```bash
+npm i
+```
    
 2. **Iniciar a API fake (JSON Server):**
 
@@ -50,21 +51,23 @@ A rota inicial é /login.
 🗃️ Estrutura da API (json-server)
 O arquivo db.json (na raiz do projeto) contém:
 
-json
-Copiar código
+```bash
 {
   "usuarios": [
     { "id": "1", "nome": "Gabriel", "nomeUsuario": "gabriel", "email": "gabriel@exemplo.com" }
   ]
 }
-🔗 Endpoints Principais
+```
+🔗**Endpoints Principais**
+```bash
 GET http://localhost:3001/usuarios
 
 GET http://localhost:3001/usuarios?nomeUsuario=ada&email=ada@exemplo.com
 
 POST http://localhost:3001/usuarios (para cadastro)
+```
+🧭 **Rotas do App**
 
-🧭 Rotas do App
 Rota	Descrição
 /login	Tela inicial — formulário de login com nomeUsuario e email
 /cadastro	Tela de cadastro com nome, nomeUsuario, email
