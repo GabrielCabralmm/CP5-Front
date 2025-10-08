@@ -68,9 +68,11 @@ POST http://localhost:3001/usuarios (para cadastro)
 ```
 🧭 **Rotas do App**
 
-Rota	     |    Descrição
-/login	  |    Tela inicial — formulário de login com nomeUsuario e email
-/cadastro  |	 Tela de cadastro com nome, nomeUsuario, email
+
+| Rota | Descrição |
+|------|------------|
+| `/login` | Tela inicial — formulário de login com `nomeUsuario` e `email` |
+| `/cadastro` | Tela de cadastro com `nome`, `nomeUsuario`, `email` |
 
 Após login bem-sucedido:
 
