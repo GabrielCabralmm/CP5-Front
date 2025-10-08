@@ -21,3 +21,27 @@ App simples com Login e Cadastro utilizando React Hook Form, Tailwind CSS e uma 
 Node.js v18+ (recomendado v20+)
 
 npm
+
+▶️ Como Rodar o Projeto
+
+Instalar dependências:
+
+npm i
+
+
+Iniciar a API fake (JSON Server):
+
+npm run api
+
+
+Servidor disponível em: http://localhost:3001
+
+Iniciar o app (Vite):
+
+npm run dev
+
+
+Aplicação disponível em: http://localhost:5173
+
+A rota inicial é /login.
+
