@@ -27,20 +27,24 @@ App simples com **Login** e **Cadastro** utilizando **React Hook Form**, **Tailw
 1. **Instalar dependências:**
    ```bash
    npm i
-Iniciar a API fake (JSON Server):
+   
+2. **Iniciar a API fake (JSON Server):**
 
-bash
-Copiar código
+```bash
 npm run api
-Servidor disponível em: http://localhost:3001
-
-Iniciar o app (Vite):
-
-bash
-Copiar código
+```
+Saída esperada: 
+```bash
+JSON Server listening on http://localhost:3001
+```
+3. **Iniciar o app (Vite):**
+```bash
 npm run dev
-Aplicação disponível em: http://localhost:5173
-
+```
+Saída esperada:
+```bash
+Vite running on http://localhost:5173
+```
 A rota inicial é /login.
 
 🗃️ Estrutura da API (json-server)
