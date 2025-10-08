@@ -16,3 +16,8 @@ App simples com Login e Cadastro utilizando React Hook Form, Tailwind CSS e uma 
 
 🗃️ JSON Server (API Fake)
 
+📦 Requisitos
+
+Node.js v18+ (recomendado v20+)
+
+npm
